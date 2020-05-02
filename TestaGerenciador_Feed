@@ -1,0 +1,59 @@
+
+
+/**
+ * @author
+ * @author: Alexandre Roberto RA 
+ * @author: Jhonatan Lima Ra 
+ * @author: Emanuelle Fernande
+ */
+
+import java.util.*;
+
+public class TestaGerenciador_Feed {
+
+    public static void main(String[] args) {
+
+        Gerenciador gerenciador = new Gerenciador();
+        Scanner scanner = new Scanner(System.in);
+        String textoRecebido = "";
+
+
+        while(2 != 0) {
+        	System.out.println("");
+        	System.out.println("********************************************* ");
+            System.out.println("       Bem vindo ao Cadastro e Consulta");
+            System.out.println("            Digite 1 para Cadastrar");
+            System.out.println("            Digite 2 para exibir RECENTES");
+            System.out.println("            Digite 3 para exibir ANTIGOS");
+            System.out.println("********************************************* ");
+ 			System.out.println("");
+
+ 			int optionUser = scanner.nextInt();
+            switch(optionUser) {
+            case 1:
+                System.out.print("     Informe o titulo da noticia:");
+                textoRecebido = scanner.next();
+                gerenciador.inserirNoticia(textoRecebido);
+                break;
+            case 2:
+            System.out.print("     Exibindo dos Recentes para os Antigos:");
+                gerenciador.imprimirRecentes();
+                break;
+            case 3:
+            System.out.print("     Exibindo dos Antigos para os Recentes:");
+                gerenciador.imprimirAntigos();
+                break;
+            default:
+                System.out.println("Obrigado por utilizar nossos servicos");
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+}

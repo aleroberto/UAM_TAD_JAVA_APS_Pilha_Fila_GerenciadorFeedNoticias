@@ -24,6 +24,7 @@ public class View {
         System.out.println("   **               Digite 1 para        Cadastrar                 **");
         System.out.println("   **               Digite 2 para        Recentes                  **");
         System.out.println("   ***              Digite 3 para        Antigos                  ***");
+        System.out.println("   ***              Digite 9 para        Encerrar                 ***");
         System.out.println("   ******************************************************************");
         System.out.println("   ******************************************************************");
         System.out.println("");
@@ -47,6 +48,9 @@ public class View {
                 gerenciador.imprimirAntigos();
                 this.exibirMenu();
                 break;
+            case 9:
+                this.encerrar();
+                System.exit(0);
             default:
                 this.exibirMenu();
                 break;
@@ -56,4 +60,22 @@ public class View {
             throw new Exception();
         }
     }
+
+    void encerrar() {
+
+        System.out.println("");
+        System.out.println("   ******************************************************************");
+        System.out.println("   ******************************************************************");
+        System.out.println("   **                                                              **");
+        System.out.println("   ***            Obrigado por utilizar nosso servicos            ***");
+        System.out.println("   ***                                                            ***");
+        System.out.println("   **               Alexandre Roberto RA 21434418                 ***");
+        System.out.println("   **           Igor Oliveira da Silva  RA 20926645               ***");
+        System.out.println("   ***        Emanuelle Fernandes de Macedo Pimenta 21433185      ***");
+        System.out.println("   **                                                              **");
+        System.out.println("   ******************************************************************");
+        System.out.println("   ******************************************************************");
+        System.out.println("");
+    }
 }
+

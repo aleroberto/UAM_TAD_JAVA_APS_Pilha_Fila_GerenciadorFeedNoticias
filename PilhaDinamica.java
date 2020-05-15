@@ -1,8 +1,6 @@
-
 /**
- * @author 
  * @author: Alexandre Roberto RA 21434418
- * @author: Jhonatan Lima Ra 21337942
+ * @author: Igor Oliveira da Silva  RA 20926645 
  * @author: Emanuelle Fernandes de Macedo Pimenta 21433185
  */
 
@@ -17,6 +15,7 @@ public class PilhaDinamica {
 		No novoNo = new No(dado);
 		novoNo.proximoNo = this.topo;
 		this.topo = novoNo;
+
 	}
 
 	public String desempilha() {
@@ -30,6 +29,7 @@ public class PilhaDinamica {
 			topo = auxiliar.proximoNo;
 			return auxiliar.dado;
 		}
+
 	}
 
 	boolean pilhaVazia() {
@@ -46,5 +46,7 @@ public class PilhaDinamica {
 				auxiliar = auxiliar.proximoNo;
 			}
 		}
+
 	}
+
 }

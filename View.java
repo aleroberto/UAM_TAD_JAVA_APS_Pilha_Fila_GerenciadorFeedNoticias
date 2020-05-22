@@ -1,10 +1,3 @@
-/**
- * @author
- * @author: Alexandre Roberto RA 21434418
- * @author: Jhonatan Lima Ra 21337942
- * @author: Emanuelle Fernandes de Macedo Pimenta 21433185
- */
-
 import java.util.Scanner;
 import java.io.*;
 public class View {
@@ -60,9 +53,7 @@ public class View {
             throw new Exception();
         }
     }
-
     void encerrar() {
-
         System.out.println("");
         System.out.println("   ******************************************************************");
         System.out.println("   ******************************************************************");
@@ -78,4 +69,3 @@ public class View {
         System.out.println("");
     }
 }
-

@@ -1,14 +1,6 @@
-/**
- * @author: Alexandre Roberto RA 21434418
- * @author: Igor Oliveira da Silva  RA 20926645 
- * @author: Emanuelle Fernandes de Macedo Pimenta 21433185
- */
-
 import java.util.*;
 public class TestaGerenciador_Feed {
-
     public static void main(String[] args) {
-
         View view2 = new View();
         try {
             view2.exibirMenu();

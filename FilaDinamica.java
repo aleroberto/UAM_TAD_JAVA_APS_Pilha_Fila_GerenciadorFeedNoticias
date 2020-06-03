@@ -5,7 +5,7 @@ public class FilaDinamica {
         this.inicio = null;
         this.fim = null;
     }
-    void imprime() {
+    protected void imprime() {
         if (isEmpty()) {
             System.out.println("vazia");
         } else {
@@ -16,10 +16,10 @@ public class FilaDinamica {
             }
         }
     }
-    boolean isEmpty() {
+    protected boolean isEmpty() {
         return (inicio == null);
     }
-    public void inserir(String dado) {
+    protected void inserir(String dado) {
         No novoNo = new No(dado);
         if (inicio == null) {
             inicio = novoNo;
@@ -30,7 +30,7 @@ public class FilaDinamica {
         }
 
     }
-    public String dequeue() {
+    protected String dequeue() {
         if(isEmpty()) {
             System.out.println("Nao ha itens");
         }
